@@ -7,14 +7,13 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 
-    /* Imagem de fundo da página */
     background-image: url("images/background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-/* Camada branca com transparência para facilitar leitura */
+/* Camada branca com transparência */
 body::before {
     content: "";
     position: fixed;
@@ -37,7 +36,6 @@ header {
     justify-content: center;
 }
 
-/* Caixa verde do título */
 .header-content {
     background-color: rgba(0, 128, 0, 0.75);
     padding: 20px 40px;
@@ -84,11 +82,27 @@ header {
     transition: opacity 0.8s ease-in-out;
 }
 
-/* Texto dos quadros */
+/* Texto base */
 .quadro p {
     margin-top: 12px;
-    color: rgb(0, 0, 0);
     line-height: 1.4;
+}
+
+/* ===== CORES POR PAÍS (RGB) ===== */
+
+/* Alemanha - 2014 (preto da bandeira) */
+.alemanha p {
+    color: rgb(0, 0, 0);
+}
+
+/* França - 2018 (azul da bandeira) */
+.franca p {
+    color: rgb(0, 85, 164);
+}
+
+/* Argentina - 2022 (azul claro da bandeira) */
+.argentina p {
+    color: rgb(116, 172, 223);
 }
 
 /* ===== Rodapé ===== */
@@ -100,7 +114,7 @@ footer {
     font-size: 14px;
 }
 
-/* ===== Responsividade para celular ===== */
+/* ===== Responsividade ===== */
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
