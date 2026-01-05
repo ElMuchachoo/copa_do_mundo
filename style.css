@@ -1,0 +1,118 @@
+/* ===== Configs Gerais ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* Imagem de fundo da página */
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Camada branca com transparência para facilitar leitura */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: -1;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+    height: 180px;
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Caixa verde do título */
+.header-content {
+    background-color: rgba(0, 128, 0, 0.75);
+    padding: 20px 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.header-content h2 {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+}
+
+/* ===== Conteúdo Principal ===== */
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* ===== Quadros ===== */
+.quadro {
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Imagens com efeito fade */
+.quadro img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
+}
+
+/* Texto dos quadros */
+.quadro p {
+    margin-top: 12px;
+    color: rgb(0, 0, 0);
+    line-height: 1.4;
+}
+
+/* ===== Rodapé ===== */
+footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* ===== Responsividade para celular ===== */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quadro {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        height: 220px;
+    }
+}
