@@ -90,17 +90,17 @@ header {
 
 /* ===== CORES POR PAÍS (RGB) ===== */
 
-/* Alemanha - 2014 (preto da bandeira) */
+/* Alemanha - 2014*/
 .alemanha p {
     color: rgb(255, 206, 0);
 }
 
-/* França - 2018 (azul da bandeira) */
+/* França - 2018*/
 .franca p {
     color: rgb(200, 16, 46);
 }
 
-/* Argentina - 2022 (azul claro da bandeira) */
+/* Argentina - 2022*/
 .argentina p {
     color: rgb(0, 85, 164);
 }
@@ -130,4 +130,5 @@ footer {
         height: 220px;
     }
 }
+
 
